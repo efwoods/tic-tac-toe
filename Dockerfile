@@ -1,6 +1,6 @@
 FROM node:16
 
-LABEL org.opencontainers.image.source https://github.com/efwoods/tic-tac-toe
+# LABEL org.opencontainers.image.source https://github.com/efwoods/tic-tac-toe
 
 WORKDIR /client
 
