@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "0.1.0",
-  "homepage": "https://efwoods.github.io/tic-tac-toe",
+  "homepage": "https://efwoods.github.io/tic-tac-toe/",
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^3.2.0",
