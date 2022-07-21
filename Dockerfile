@@ -1,21 +1,15 @@
-# Create image
-FROM node:14.17.3
+FROM node:16
 
-# Create app directory
-WORKDIR /usr/src/app
+LABEL org.opencontainers.image.source https://github.com/efwoods/tic-tac-toe
 
-# Copy dependency definitions
-# COPY package.json /usr/src/app
-# COPY package-lock.json /usr/src/app
-COPY . /usr/src/app
-# Install dependencies
+WORKDIR /client
+
+COPY package*.json /client/
+
 RUN npm install
 
-# Get all the code needed to run the app
-COPY . .
+COPY . /client/
 
-#Expose the port the app runs in
 EXPOSE 3000
 
-#Serve the app
 CMD ["npm", "start"]
