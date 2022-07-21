@@ -19,7 +19,6 @@ function App({ signOut }) {
             <img src={logo} className="App-logo" alt="logo" />
 
                 <Game />
-                <Button onClick={signOut}>Sign Out</Button>
             </Card>
 
         </View>
